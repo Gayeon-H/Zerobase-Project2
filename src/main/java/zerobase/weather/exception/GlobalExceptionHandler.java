@@ -12,7 +12,7 @@ public class GlobalExceptionHandler {
 
     @ResponseStatus(HttpStatus.FORBIDDEN)
     @ExceptionHandler(WeatherException.class)
-    public Exception handleWeatherException(WeatherException e) {
+    public Exception handleWeatherException() {
         log.error("WeatherException is occurred");
         return new WeatherException();
     }
