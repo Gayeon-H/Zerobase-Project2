@@ -1,0 +1,20 @@
+### diary create
+POST http://localhost:8080/create/diary?date=3300-07-01
+Content-Type: application/json
+
+i want to learn spring boot!!!
+
+### diary read
+GET http://localhost:8080/read/diary?date=3300-07-01
+
+### diaries read
+GET http://localhost:8080/read/diaries?startDate=2023-07-01&endDate=2023-07-02
+
+### diary update
+PUT http://localhost:8080/update/diary?date=2023-07-02
+Content-Type: application/json
+
+i want to learn spring!
+
+### diary delete
+DELETE http://localhost:8080/delete/diary?date=2023-07-01
